@@ -36,7 +36,7 @@
 					</ul>
 					<div v-for="(count, cur) in currency" class="total-sum">
 						<div v-for="c in Number(count)">
-							<v-bill v-if="cur > 10 && count"  :value="Number(cur)"/>
+							<!--<v-bill v-if="cur > 10 && count"  :value="Number(cur)"/>-->
 							<v-coin v-if="cur < 20 && count" :value="Number(cur)"/>
 						</div>
 					</div>						
@@ -127,7 +127,7 @@
 import Vue from 'vue';
 import { Instascan } from '@/plugins/instascan';
 import VLayout from '@/layouts/Minimal';
-import VBill from '@/components/Bill';
+//import VBill from '@/components/Bill';
 import VCoin from '@/components/Coin';
 
 const g_currency = [
@@ -220,7 +220,7 @@ export default {
 	 },
 	 components: {
 		VLayout,
-		VBill,
+		//VBill,
 		VCoin,
 	 },
 	 mounted() {
