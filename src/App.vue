@@ -7,10 +7,11 @@
 <style>
 	body, html {
 		font-family: 'Mukta Mahee', sans-serif;
-		height:100%;
+		height: 100%;
 	}
 	#app {
-		height: 100%;
+		min-height: 100%;
+    	height: 100%;
 	}
 </style>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="container main-container">
+  <div class="container-fluid main-container">
       <div class="col col-12">
         <!-- Content will be placed here -->
         <slot></slot>
@@ -8,11 +8,14 @@
 </template>
 
 <style>
+	body {
+		background-color: #429fd4;
+	}
 
 	.main-container {
-		background-color: #b4b4b4;
+		background-color: #52bfff;
 		color: #3a3a3a;
-		height: 100%;
+		padding-bottom: 80px;
 	}
 </style>
 
